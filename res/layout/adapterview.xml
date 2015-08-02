@@ -1,0 +1,57 @@
+
+<RelativeLayout 
+    android:layout_height="72dp" 
+    android:layout_width="fill_parent" 
+    android:orientation="horizontal"
+    android:focusable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"> 
+    
+    <ImageView 
+        android:layout_height="72dp" 
+        android:layout_width="72dp" 
+        android:id="@+id/img"
+        android:layout_centerVertical="true"
+        /> 
+    <TextView 
+        android:layout_height="wrap_content" 
+        android:layout_width="150dp" 
+        android:id="@+id/title" 
+        android:text="姓名"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="28px"
+        android:textColor="#808080" 
+        android:layout_toRightOf="@+id/img" 
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentTop="true"             
+        android:layout_marginTop="22dp"  
+        
+       />
+    
+    <TextView
+        android:id="@+id/label_in_main"
+        android:layout_height="wrap_content" 
+        android:layout_width="150dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+       
+        android:textSize="22px"
+        android:textColor="#c8c1c1" 
+        android:layout_alignLeft="@id/title"
+        android:layout_below="@id/title"
+        />
+
+    <Button
+        android:id="@+id/view_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:clickable="false"
+          android:focusableInTouchMode="false"
+        android:layout_alignParentRight="true"
+        android:focusable="false"  
+        android:layout_alignParentTop="true"      
+        android:layout_marginTop="12dp"
+        android:background="@drawable/star_yes" />
+    
+</RelativeLayout>

@@ -1,0 +1,29 @@
+
+      <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="48dp"
+	 	android:id="@+id/phonesetRL"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+      >
+ 
+      
+       <EditText
+           android:id="@+id/phone"
+           android:layout_width="244dp"
+           android:layout_height="34dp"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="12dp"
+           android:background="@drawable/editrow"
+           android:textColor="#808080"
+           android:singleLine="true"
+           />
+       
+         <Button 
+           android:background="@drawable/deleterow_s"
+           android:id="@+id/delete_phone_btn"
+           android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+           />
+         </RelativeLayout>
+         

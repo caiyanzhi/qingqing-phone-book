@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="150dp"
+    android:background="@drawable/background">
+
+    <TextView 
+        android:id="@+id/message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="message"
+        android:textSize="35sp"
+        android:textColor="#9ec777" 
+        android:gravity="center"     
+        android:layout_marginTop="10dp"   
+        />    
+       
+    <ImageView 
+        android:id="@+id/alert_line"
+        android:background="#9ec777"
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/message"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <ImageView 
+        android:id="@+id/alert_shuxian"
+        android:background="#808080"
+        android:layout_height="50dp"
+        android:layout_width="1dp"
+        android:layout_below="@id/alert_line"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        
+        />
+    
+    <Button
+        android:id="@+id/positiveButton"
+        android:layout_height="50dp"
+        android:layout_width="125dp"
+        android:layout_toLeftOf="@id/alert_shuxian"
+        android:layout_marginRight="2dp"
+        android:layout_alignTop="@id/alert_shuxian"
+        android:text="确定"
+        android:textColor="#808080"
+        />
+    
+    <Button 
+        android:id="@+id/negativeButton"
+        android:layout_height="50dp"
+        android:layout_width="125dp"
+        android:layout_toRightOf="@id/alert_shuxian"
+        android:layout_marginLeft="2dp"
+        android:layout_alignTop="@id/alert_shuxian"      
+        android:text="取消"
+        android:textColor="#808080"
+        />
+</RelativeLayout>  

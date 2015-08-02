@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+        android:background="@drawable/background">
+   
+    <LinearLayout android:layout_width="fill_parent"
+           android:layout_height="48dp"
+           android:orientation="horizontal">    >
+    <Button 
+        android:id="@+id/deleteSome"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/groupdelete_s"
+
+        />
+    <View
+        android:id="@+id/line"
+        android:background="@drawable/shuxian"
+        android:layout_width="2dp"
+        android:layout_height="48dp"
+       
+        />
+    <Button 
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+		android:background="@drawable/groupsendmessage_s"
+        android:id="@+id/sentMessSome"
+       />
+</LinearLayout> 
+ <LinearLayout 
+     
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+       >
+        <ListView
+              android:id="@+id/selectToDeleteListView"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:divider="#00aabbcc"
+            >
+        </ListView>
+        </LinearLayout>
+        
+  
+</LinearLayout>

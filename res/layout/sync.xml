@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background">
+	<TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="上传通讯录至服务器，或将手机通讯录与服务器数据同步"
+        android:textSize="32px"
+        android:textColor="#9ec777" 
+        android:id="@+id/text"/>
+
+	<TextView
+    	    android:id="@+id/returnmessage"
+    	    android:layout_width="wrap_content"
+    	    android:layout_marginTop="50dp"
+    	    android:layout_height="50dp"
+    	    android:text=""
+    	    android:layout_gravity="center"
+    	    android:textColor="#9ec777"
+    	    android:textSize="18sp" />
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="#C6E3A5"
+        android:layout_gravity="center"
+        android:text="备份上传"
+        android:textColor="#ffffff"
+        android:textSize="32px" />
+
+    <Button
+        android:id="@+id/download"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#C6E3A5"
+        android:text="同步至手机"
+        android:textColor="#ffffff"
+        android:textSize="32px" />
+</LinearLayout>

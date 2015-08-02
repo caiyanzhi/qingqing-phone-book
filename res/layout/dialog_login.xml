@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+	<RelativeLayout 
+    	android:layout_width="280dp"
+    	android:layout_height="280dp"
+    	android:layout_gravity="center"
+        android:orientation="vertical"
+    	android:background="@drawable/background" >
+
+    	<TextView
+        	android:id="@+id/title"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:gravity="center"
+        	android:text="标题"
+        	android:textColor="#9ec777"
+        	android:textSize="25sp" />
+
+    	<ImageView
+        	android:id="@+id/alert_line"
+        	android:layout_width="250dp"
+        	android:layout_height="2dp"
+        	android:layout_below="@id/title"
+        	android:layout_centerHorizontal="true"
+        	android:layout_marginTop="10dp"
+        	android:background="#9ec777" />
+
+    	<EditText
+        	android:id="@+id/user"
+        	android:hint="请输入用户名"
+    		android:layout_width="200dp"
+        	android:layout_height="40dp"
+        	android:layout_alignRight="@+id/alert_line"
+        	android:layout_below="@+id/alert_line"
+        	android:layout_marginTop="25dp"
+        	android:ems="10" />
+
+    	<TextView
+        	android:id="@+id/textView1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignBaseline="@+id/user"
+        	android:layout_alignBottom="@+id/user"
+        	android:layout_toLeftOf="@+id/user"
+        	android:text="用户名"
+        	android:textColor="#9ec777"
+        	android:textSize="18sp" />
+
+    	<EditText
+        	android:id="@+id/password"
+        	android:hint="请输入密码"
+        	android:layout_width="200dp"
+        	android:layout_height="40dp"
+        	android:layout_alignLeft="@+id/user"
+        	android:layout_below="@+id/user"
+        	android:layout_marginTop="14dp"
+        	android:ems="10" 
+        	android:inputType="textPassword" />
+
+    	<TextView
+        	android:id="@+id/textView2"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignBaseline="@+id/password"
+        	android:layout_alignBottom="@+id/password"
+        	android:layout_alignLeft="@+id/alert_line"
+        	android:text="密码"
+        	android:textColor="#9ec777"
+        	android:textSize="18sp" />
+
+    	<TextView
+    	    android:id="@+id/returnmessage"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="50dp"
+    	    android:layout_alignLeft="@+id/textView2"
+    	    android:layout_below="@+id/password"
+    	    android:text="为保障你的信息安全，请先登录或注册"
+    	    android:textColor="#9ec777"
+    	    android:textSize="18sp" />
+    	
+    	<Button
+        	android:id="@+id/negativeButton"
+        	android:layout_below="@+id/returnmessage"
+        	android:layout_width="80dp"
+        	android:layout_height="45dp"
+        	android:layout_alignBaseline="@+id/signupButton"
+        	android:layout_alignBottom="@+id/signupButton"
+        	android:layout_alignRight="@+id/user"
+        	android:text="取消"
+        	android:textColor="#808080" 
+        	android:background="@drawable/surebtn_s"
+        	/>
+
+    	<Button
+        	android:id="@+id/signupButton"
+        	android:layout_width="80dp"
+        	android:layout_height="45dp"
+        	android:layout_alignLeft="@+id/textView2"
+        	android:layout_alignParentBottom="true"
+        	android:layout_marginBottom="15dp"
+        	android:text="注册"
+        	android:textColor="#808080" 
+        	android:background="@drawable/surebtn_s"/>
+
+    	<Button
+        	android:id="@+id/loginButton"
+        	android:layout_width="80dp"
+        	android:layout_height="45dp"
+        	android:layout_alignBaseline="@+id/signupButton"
+        	android:layout_alignBottom="@+id/signupButton"
+        	android:layout_centerHorizontal="true"
+        	android:text="登录"
+        	android:textColor="#808080"
+        	android:background="@drawable/surebtn_s" />
+
+
+		</RelativeLayout>
+</FrameLayout>

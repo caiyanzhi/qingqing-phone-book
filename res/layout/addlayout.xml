@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="match_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    >
+   <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="48dp"
+         android:background="#91c777"
+       >
+
+        <Button 
+            android:id="@+id/back"
+            android:background="@drawable/back_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+        
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_toRightOf="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:text="添加联系人"
+        	android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:textSize="20sp" />
+
+      <Button      
+        android:id="@+id/save"
+        android:background="@drawable/ok_s"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"    
+       />
+        
+    </RelativeLayout> 
+    
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="144dp">
+      
+          <ImageView 
+             android:layout_width="144dp"
+           android:layout_height="144dp"
+           android:background="@drawable/headportrait_forsingle"           
+           />
+       
+       <ImageButton 
+           android:id="@+id/addImage"
+           android:contentDescription="图片按钮"
+           android:layout_width="144dp"
+           android:layout_height="144dp"
+           android:background="#00aabbcc"
+           />
+ 
+       <EditText
+           android:id="@+id/name"
+           android:layout_width="138dp"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/addImage"
+           android:layout_marginLeft="12dp"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="100dp"
+           android:gravity="center_vertical"
+           android:text="姓名"
+           android:singleLine="true"
+           android:textSize="26px"
+           android:textColor="#808080"
+           android:background="@drawable/namecolumn"            
+        />   
+       
+   </RelativeLayout>
+    
+       <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="36dp"
+       android:text="    标签"
+       android:gravity="center_vertical"
+       android:textColor="#ffffff"
+       android:textSize="25px"
+       android:background="@drawable/title_row"
+
+     />
+   
+   <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="48dp"
+      >
+       <TextView
+           android:id="@+id/label"
+           android:layout_width="244dp"
+           android:layout_height="48dp"
+           android:layout_marginLeft="18dp"
+           android:textSize="26px"
+           android:singleLine="true"
+           android:textColor="#808080"
+           android:gravity="center_vertical"
+           />       
+
+       <Button
+           android:id="@+id/addlabelBtn"
+           android:background="@drawable/more_s"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           />
+       
+  </RelativeLayout>
+      
+    <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="48dp"
+      >  
+   
+     <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="36dp"
+       android:text="    电话"
+       android:gravity="center_vertical"
+       android:textColor="#ffffff"
+        android:textSize="25px"
+       android:background="@drawable/title_row"
+       android:id="@+id/phone_text"
+     />
+
+
+     <Button 
+         android:id="@+id/add_phone_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:background="@drawable/addrow_s"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="5dp"
+         android:layout_alignTop="@id/phone_text"
+         />
+   
+         </RelativeLayout>
+         
+    <LinearLayout
+        android:id="@+id/phoneset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+      
+        </LinearLayout>
+  
+
+    <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="36dp"
+       android:text="    电子邮件"
+       android:gravity="center_vertical"
+       android:textColor="#ffffff"
+        android:textSize="25px"
+       android:background="@drawable/title_row"
+  
+     />
+    
+  <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="48dp"
+      >
+       <EditText
+           android:id="@+id/mail"
+           android:layout_width="244dp"
+           android:layout_height="36dp"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="12dp"
+           android:singleLine="true"
+            android:textSize="26px"
+           android:textColor="#808080"
+           android:background="@drawable/editrow"/>       
+  </RelativeLayout>
+  
+  
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" >
+
+</RelativeLayout>
+     <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="36dp"
+       android:text="    铃声"
+       android:gravity="center_vertical"
+       android:textColor="#ffffff"
+        android:textSize="25px"
+       android:background="@drawable/title_row"
+  
+     />
+    
+  <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="48dp"
+     >
+     <TextView
+        android:id="@+id/ring_name"
+        android:layout_width="244dp"
+           android:layout_height="48dp"
+           android:layout_marginLeft="18dp"
+           android:text="默认铃声"
+            android:textSize="26px"
+           android:textColor="#808080"
+           android:gravity="center_vertical"
+        >       
+    </TextView>
+    <Button 
+         android:id="@+id/add_ring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:background="@drawable/more_s"
+    
+         />
+  
+    </RelativeLayout>
+      
+  </LinearLayout>
+</ScrollView>

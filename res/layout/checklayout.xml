@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  android:layout_width="fill_parent"
+    android:layout_height="match_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+   >
+   <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="48dp"
+       android:background="#91c777"
+       >
+
+        <Button 
+            android:id="@+id/back"
+     		android:background="@drawable/back_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+             />
+        
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_toRightOf="@id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="查看联系人"
+        	android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:textSize="20sp" />
+       
+       <Button
+        android:id="@+id/deleteCon"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/delete_s"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+       /> 
+        
+
+      <Button
+        android:layout_toLeftOf="@+id/deleteCon"
+        android:layout_marginRight="24dp"
+        android:id="@+id/edit"
+        android:background="@drawable/edit_s"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+       />
+    </RelativeLayout> 
+    
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="144dp"
+   >
+       <ImageView
+           android:id="@+id/addImage"
+           android:contentDescription="图片"
+           android:layout_width="144dp"
+           android:layout_height="144dp"
+           />
+
+       <TextView
+           android:id="@+id/name"
+           android:layout_width="112dp"
+           android:layout_height="wrap_content"
+         	android:layout_toRightOf="@id/addImage"
+         	android:layout_marginLeft="20dp"    
+ 			android:layout_marginTop="34dp"
+           android:text="姓名:"
+           android:textSize="18sp" 
+           android:textColor="#808080"
+           />       
+              
+        <ImageView
+            android:id="@+id/Star"
+             android:contentDescription="星标"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/star_singleperson"
+            />
+        
+      
+        <TextView
+            android:id="@+id/label"
+            android:layout_below="@id/name"
+            android:layout_alignLeft="@id/name"
+            android:layout_marginTop="12px"
+            android:layout_width="140dp"
+            android:layout_height="30dp"   
+            android:singleLine="true"   
+      		android:ellipsize="marquee" 
+      		android:marqueeRepeatLimit="marquee_forever" 
+            android:textSize="14sp"
+            android:textColor="#808080"    
+       
+            />
+       
+   </RelativeLayout>
+   
+
+    <LinearLayout
+        android:id="@+id/phoneset"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >      
+        </LinearLayout>        
+       
+  <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="72dp"
+       android:id="@+id/mailline"
+       android:visibility="gone"
+      >
+       <TextView
+           android:id="@+id/mail"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="24dp"
+            android:layout_marginTop="22dp"
+           android:textSize="23px"
+           android:textColor="#808080"
+       />
+         <TextView
+           android:text="电子邮件"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/mail"
+           android:layout_below="@+id/mail"
+           android:textSize="22px"
+           android:textColor="#808080"
+       />
+  </RelativeLayout>
+  
+  <RelativeLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="72dp"
+      android:id="@+id/ring_line"
+      >
+           <TextView
+           android:id="@+id/ring_name"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="24dp"
+           android:layout_marginTop="22dp" 
+            android:textSize="23px"
+           android:textColor="#808080"
+       />
+         <TextView
+           android:text="铃声"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/ring_name"
+           android:layout_below="@id/ring_name"
+            android:textSize="22px"
+           android:textColor="#808080"
+       /> 
+      
+  </RelativeLayout>
+
+
+</LinearLayout>
+</ScrollView>
